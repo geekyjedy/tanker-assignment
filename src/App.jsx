@@ -188,7 +188,6 @@ function App() {
           <Button
             label='MC'
             onClick={handleMemoryClear}
-            className={`text-xl py-6 rounded-lg bg-gray-200 hover:bg-gray-300 transition duration-200 px-6 mb-3`}
           />
           <div className="grid grid-cols-4 gap-3">
             {staticButtons.map((button, index) => (
@@ -196,8 +195,6 @@ function App() {
                 key={index}
                 label={button.label}
                 onClick={button.onClick}
-                className={`text-xl py-6 rounded-lg bg-gray-200 hover:bg-gray-300
-                   transition duration-200 ${button.label === '0' && "col-span-2"} ${button.label === '=' && "bg-sky-500 text-white"} flex justify-center items-cente`}
               />
             ))}
           </div>
